@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CustomVoice</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<h1>Custom Voice</h1>
+							<p>随心所欲定制声音</p>
+						</header>
+
+						<hr />
+						<h2>在下方输入文本，进行试听</h2>
+						<form method="post" action="doTrans2Voice.action">
+							<div class="fields">
+
+								<div class="field">
+									<textarea name="voiceText" placeholder="文本内容" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="点我进行转换" class="button"/></li>
+							</ul>
+						</form>
+						<hr />
+
+						<footer>
+							<ul class="icons">
+								<li><a href="https://github.com/lincvic" class="fa-github">Github</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Wang</li><li>Design: <a href="https://github.com/lincvic">Lincvic</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
